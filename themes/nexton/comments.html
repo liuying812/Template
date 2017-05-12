@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Nexton Admin Panel">
+        <meta name="keywords" content="Admin, Dashboard, Bootstrap3, Sass, transform, CSS3, HTML5, Web design, UI Design, Responsive Dashboard, Responsive Admin, Admin Template, Best Admin UI, Bootstrap Template, Themeforest, Bootstrap">
+        <meta name="author" content="Bootstrap Gallery">
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>
+            Nexton Admin Panel, Nexton Dashboard
+        </title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/main.css" rel="stylesheet" media="screen">
+        <link href="css/newsfeed.css" rel="stylesheet">
+        <link href="css/heatmap/cal-heatmap.css" rel="stylesheet">
+        <link href="fonts/icomoon/icomoon.css" rel="stylesheet">
+       
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js">
+            </script>
+            <script src="js/respond.min.js">
+            </script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <header class="clearfix">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div class="pull-right">
+                <ul id="header-actions" class="clearfix">
+                    <li class="list-box dropdown">
+                        <a id="drop10" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="info-label">
+                                4
+                            </span>
+                            <i class="icon-circle-check info-icon text-warning">
+                            </i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <section class="todo">
+                                <fieldset class="todo-list">
+                                    <label class="todo-list-item">
+                                        <input type="checkbox" class="todo-list-cb">
+                                        <span class="todo-list-mark">
+                                        </span>
+                                        <span class="todo-list-desc">
+                                            Fix UI Bug
+                                        </span>
+                                        <small class="scheduled">
+                                            Scheduled for 24th Dec, Assigned to Shawn.
+                                        </small>
+                                    </label>
+                                    <label class="todo-list-item">
+                                        <input type="checkbox" class="todo-list-cb">
+                                        <span class="todo-list-mark">
+                                        </span>
+                                        <span class="todo-list-desc">
+                                            Send all Documents
+                                        </span>
+                                        <small class="scheduled">
+                                            Scheduled for 24th Dec, Assigned to Leena.
+                                        </small>
+                                    </label>
+                                    <label class="todo-list-item">
+                                        <input type="checkbox" class="todo-list-cb">
+                                        <span class="todo-list-mark">
+                                        </span>
+                                        <span class="todo-list-desc">
+                                            Attend Wedding Party
+                                        </span>
+                                        <small class="scheduled">
+                                            Scheduled on 10th Dec, Assigned to Mark.
+                                        </small>
+                                    </label>
+                                    <label class="todo-list-item">
+                                        <input type="checkbox" class="todo-list-cb" checked="checked">
+                                        <span class="todo-list-mark">
+                                        </span>
+                                        <span class="todo-list-desc">
+                                            Meet Mr.James
+                                        </span>
+                                        <small class="scheduled">
+                                            Completed on 5th Dec, Assigned to Robin.
+                                        </small>
+                                    </label>
+                                    <label class="todo-list-item">
+                                        <input type="checkbox" class="todo-list-cb overdue" checked="checked">
+                                        <span class="todo-list-mark">
+                                        </span>
+                                        <span class="todo-list-desc">
+                                            Read Turning Points
+                                        </span>
+                                        <small class="scheduled">
+                                            Overdue 12 days, Assigned to Wincy.
+                                        </small>
+                                    </label>
+                                </fieldset>
+                            </section>
+                        </div>
+                    </li>
+                    <li class="list-box dropdown">
+                        <a id="drop1" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                            <span class="info-label">
+                                7
+                            </span>
+                            <i class="icon-notifications_active info-icon text-success">
+                            </i>
+                        </a>
+                        <ul class="dropdown-menu imp-notify">
+                            <li>
+                                <div class="thumb">
+                                    <img src="img/user4.png" alt="Admin Dashboard">
+                                </div>
+                                <div class="details">
+                                    <strong>
+                                        Wilson Kewis
+                                    </strong>
+                                    <p>
+                                        The best dashboard design I have ever seen. Good luck with sales.
+                                    </p>
+                                    <small class="date">
+                                        Today at 10:10 pm - 21.12.2016
+                                    </small>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb">
+                                    <img src="img/user7.png" alt="Admin Dashboard">
+                                </div>
+                                <div class="details">
+                                    <strong>
+                                        Justin Mezzell
+                                    </strong>
+                                    <p>
+                                        To keep your account secure, we need to revalidate your account.
+                                    </p>
+                                    <small class="date">
+                                        3 days ago at 2:30 pm
+                                    </small>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb">
+                                    <img src="img/user1.png" alt="Admin Dashboard">
+                                </div>
+                                <div class="details">
+                                    <strong>
+                                        Shawn Ankith
+                                    </strong>
+                                    <p>
+                                        Contact you via phone with support for recent purchases and product information.
+                                    </p>
+                                    <small class="date">
+                                        7 days ago at 5:15 pm
+                                    </small>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-box user-admin dropdown">
+                        <div class="admin-details">
+                            <div class="name">
+                                Shawn
+                            </div>
+                            <div class="designation">
+                                System Admin
+                            </div>
+                        </div>
+                        <a id="drop4" href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-account_circle">
+                            </i>
+                        </a>
+                        <ul class="dropdown-menu sm">
+                            <li class="dropdown-content">
+                                <a href="#">
+                                    <i class="icon-warning2">
+                                    </i>
+                                    Update Password
+                                    <br>
+                                    <span>
+                                        Your password will expire in 7 days.
+                                    </span>
+                                </a>
+                                <a href="profile.html">
+                                    Edit Profile
+                                </a>
+                                <a href="forgot-pwd.html">
+                                    Change Password
+                                </a>
+                                <a href="validations.html">
+                                    Settings
+                                </a>
+                                <a href="login.html">
+                                    Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <a href="comments.html" class="support">
+                Support
+            </a>
+            <div class="custom-search">
+                <input type="text" class="search-query" placeholder="Search here ...">
+                <i class="icon-search4">
+                </i>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="dashboard-wrapper">
+                <nav class="navbar navbar-default">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">
+                                Toggle navigation
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                            <span class="icon-bar">
+                            </span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="index.html">
+                                    <i class="icon-home2">
+                                    </i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-notification2">
+                                    </i>
+                                    Pages
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="comments.html">
+                                            Comments
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="calendar.html">
+                                            Calendar
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="profile.html">
+                                            Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="invoice.html">
+                                            Invoice
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html">
+                                            Blog
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="pricing.html">
+                                            Pricing Plans
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html">
+                                            Gallery
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="timeline.html">
+                                            Timeline
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-location3">
+                                    </i>
+                                    Charts
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="c3-graphs.html">
+                                            C3 Graphs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="maps.html">
+                                            Maps
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="flot.html">
+                                            Flot Graphs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="morris-graphs.html">
+                                            Morris Graphs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="vector-maps.html">
+                                            Vector Maps
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-browser">
+                                    </i>
+                                    Forms
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="form-inputs.html">
+                                            Form Inputs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="validations.html">
+                                            Validations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="editor.html">
+                                            Editors
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-image2">
+                                    </i>
+                                    UI Lab
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="buttons.html">
+                                            Buttons
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="components.html">
+                                            Components
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="modals.html">
+                                            Modals
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="labels-badges.html">
+                                            Labels &amp; Badges
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="spinners.html">
+                                            Spinners
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="notifications.html">
+                                            Notifications
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="progressbars.html">
+                                            Progress Bars
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="icons.html">
+                                            Icons
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="typography.html">
+                                            Typography
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="custom-panels.html">
+                                            Panels
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="custom-drag.html">
+                                            Drag &amp; Drop
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="custom-grid.html">
+                                            Grid
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="default.html">
+                                            Default Layout
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="layout-full.html">
+                                            Layout Without Sidebar
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-new-message">
+                                    </i>
+                                    Tables
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="tables.html">
+                                            Tables
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="data-tables.html">
+                                            Data Tables
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-error_outline">
+                                    </i>
+                                    Error
+                                    <span class="caret">
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="login.html">
+                                            Login
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="signup.html">
+                                            Sign Up
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="lock-screen.html">
+                                            Lock Screen
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="forgot-pwd.html">
+                                            Forgot Password
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="error.html">
+                                            Page Not Found
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="top-bar clearfix">
+                    <div class="page-title">
+                        <h4>
+                            Comments
+                        </h4>
+                    </div>
+                    <ul class="topbar-stats">
+                        <li>
+                            <div class="sales-block hidden-sm">
+                                <span id="overallIncome">
+                                </span>
+                            </div>
+                            <div class="sales-details">
+                                <h4>
+                                    <span>
+                                        $9579
+                                    </span>
+                                    <i class="icon-arrow-up-right2 up">
+                                    </i>
+                                </h4>
+                                <h5>
+                                    Overall Income
+                                </h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="main-container">
+                    <ul class="media-list">
+                        <li class="media">
+                            <div class="media-left">
+                                <a href="#">
+                                    <img alt="64x64" class="media-object" src="img/user1.png">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    Jake Barford
+                                    <span class="date">
+                                        3 months ago
+                                    </span>
+                                </h4>
+                                <p>
+                                    The grid right now is being handled by the Bootstrap grid system. You
+                                    can get as many rows as you want, but as far as columns you are limited
+                                    to what Bootstrap's framework can offer. 12 columns would make the images
+                                    a bit too small I think, but you could easily do 6 columns by using col-md-2
+                                    instead of col-md-3!
+                                </p>
+                                <div class="comments-footer clearfix">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="high">
+                                                <span class="count">
+                                                    354
+                                                </span>
+                                                &#9650;
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="low">
+                                                <span class="count">
+                                                    12
+                                                </span>
+                                                &#9660;
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Reply -
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Share -
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img alt="64x64" class="media-object" src="img/user6.png">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">
+                                            Carlos Slim Helu
+                                            <span class="date">
+                                                2 months ago
+                                            </span>
+                                        </h4>
+                                        <p>
+                                            I completely forgot about that.. Noob question, thank you I appreciate
+                                            the response, very neat.
+                                        </p>
+                                        <div class="comments-footer clearfix">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="high">
+                                                        <span class="count">
+                                                            231
+                                                        </span>
+                                                        &#9650;
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="low">
+                                                        <span class="count">
+                                                            6
+                                                        </span>
+                                                        &#9660;
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Reply -
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Share -
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="media hidden-xs">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img alt="64x64" class="media-object" src="img/user5.png">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">
+                                                    Angela Merkel
+                                                    <span class="date">
+                                                        1 month ago
+                                                    </span>
+                                                </h4>
+                                                <p>
+                                                    Because I am filling the grid with images of different sizes, is there
+                                                    any way to center the images along a row axis so to speak, rather than
+                                                    each row sharing a top margin/padding/whatever?
+                                                </p>
+                                                <div class="comments-footer clearfix">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="high">
+                                                                <span class="count">
+                                                                    1026
+                                                                </span>
+                                                                &#9650;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="low">
+                                                                <span class="count">
+                                                                    37
+                                                                </span>
+                                                                &#9660;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Reply -
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Share -
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="media hidden-xs">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img alt="64x64" class="media-object" src="img/user10.png">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">
+                                                            Elon Musk
+                                                            <span class="date">
+                                                                11 days ago
+                                                            </span>
+                                                        </h4>
+                                                        <p>
+                                                            Try setting the background-attachment to scroll instead of fixed for small
+                                                            devices. Certain devices don't recognize the fixed background attachment
+                                                            which leads to pictures getting blown up. Hopefully this helps!
+                                                        </p>
+                                                        <div class="comments-footer clearfix">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" class="high">
+                                                                        <span class="count">
+                                                                            53
+                                                                        </span>
+                                                                        &#9650;
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="low">
+                                                                        <span class="count">
+                                                                            2
+                                                                        </span>
+                                                                        &#9660;
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Reply -
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Share -
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media hidden-xs">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img alt="64x64" class="media-object" src="img/user9.png">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">
+                                                            Christine Lagarde
+                                                            <span class="date">
+                                                                5 days ago
+                                                            </span>
+                                                        </h4>
+                                                        <p>
+                                                            That worked fine, thanks
+                                                        </p>
+                                                        <div class="comments-footer clearfix">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" class="high">
+                                                                        <span class="count">
+                                                                            10
+                                                                        </span>
+                                                                        &#9650;
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="low">
+                                                                        <span class="count">
+                                                                            -
+                                                                        </span>
+                                                                        &#9660;
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Reply -
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Share -
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="media hidden-xs">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img alt="64x64" class="media-object" src="img/user7.png">
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">
+                                                            Ginni Rometty
+                                                            <span class="date">
+                                                                2 days ago
+                                                            </span>
+                                                        </h4>
+                                                        <p>
+                                                            Yes tried that too.
+                                                        </p>
+                                                        <div class="comments-footer clearfix">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" class="high">
+                                                                        <span class="count">
+                                                                            10
+                                                                        </span>
+                                                                        &#9650;
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="low">
+                                                                        <span class="count">
+                                                                            -
+                                                                        </span>
+                                                                        &#9660;
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Reply -
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#">
+                                                                        Share -
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media hidden-xs">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img alt="64x64" class="media-object" src="img/user8.png">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">
+                                                    Mario Draghi
+                                                    <span class="date">
+                                                        45 days ago
+                                                    </span>
+                                                </h4>
+                                                <p>
+                                                    Excellent, thanks.
+                                                </p>
+                                                <div class="comments-footer clearfix">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="high">
+                                                                <span class="count">
+                                                                    213
+                                                                </span>
+                                                                &#9650;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="low">
+                                                                <span class="count">
+                                                                    1
+                                                                </span>
+                                                                &#9660;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Reply -
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Share -
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media hidden-xs disabled">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img alt="64x64" class="media-object" src="img/user7.png">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">
+                                                    Janet Yellen
+                                                    <span class="date">
+                                                        45 days ago
+                                                    </span>
+                                                </h4>
+                                                <p>
+                                                    When I view my site that I used this one with a small device, the image
+                                                    does not scale at all.
+                                                </p>
+                                                <div class="comments-footer clearfix">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="high">
+                                                                <span class="count">
+                                                                    213
+                                                                </span>
+                                                                &#9650;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="low">
+                                                                <span class="count">
+                                                                    1
+                                                                </span>
+                                                                &#9660;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Reply -
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Share -
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media hidden-xs">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img alt="64x64" class="media-object" src="img/user10.png">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">
+                                                    Ali Hoseini-Khamenei
+                                                    <span class="date">
+                                                        30 days ago
+                                                    </span>
+                                                </h4>
+                                                <p>
+                                                    Thanks :D You saved my time :D.
+                                                </p>
+                                                <div class="comments-footer clearfix">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="high">
+                                                                <span class="count">
+                                                                    74
+                                                                </span>
+                                                                &#9650;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                <span class="count">
+                                                                    0
+                                                                </span>
+                                                                &#9660;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Reply -
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Share -
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="media hidden-xs">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img alt="64x64" class="media-object" src="img/user2.png">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">
+                                                    Christine Lagarde
+                                                    <span class="date">
+                                                        30 days ago
+                                                    </span>
+                                                </h4>
+                                                <p>
+                                                    Thats weird, for me it works perfectly fine...
+                                                </p>
+                                                <div class="comments-footer clearfix">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="high">
+                                                                <span class="count">
+                                                                    21
+                                                                </span>
+                                                                &#9650;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="low">
+                                                                <span class="count">
+                                                                    8
+                                                                </span>
+                                                                &#9660;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="high">
+                                                                Reply
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media hidden-xs">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img alt="64x64" class="media-object" src="img/user1.png">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">
+                                            Antonio Guterres
+                                        </h4>
+                                        <p>
+                                            I am a Newby to the HTML5 and Boot strap world. I need to rebuild my art
+                                            gallery website to be mobile friendly.
+                                            <br>
+                                            Can I limit the grid to a 3x3 with other gallery pages within?
+                                            <br>
+                                            Or is there a boot strap template that allows viewers to flips the images
+                                            like pages?
+                                        </p>
+                                        <div class="comments-footer clearfix">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="high">
+                                                        <span class="count">
+                                                            762
+                                                        </span>
+                                                        &#9650;
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="low">
+                                                        <span class="count">
+                                                            8
+                                                        </span>
+                                                        &#9660;
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Reply -
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Share -
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <a href="#">
+                                            <img alt="64x64" class="media-object" src="img/user4.png">
+                                        </a>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading">
+                                            Akio Toyoda
+                                        </h4>
+                                        <p>
+                                            The best way to change the CSS would be to override the bootstrap.css
+                                            file with your own CSS. If you use your web browsers development tools
+                                            you can find the classes that are setting the colors, and changing them
+                                            using CSS.
+                                        </p>
+                                        <div class="comments-footer clearfix">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="high">
+                                                        <span class="count">
+                                                            998
+                                                        </span>
+                                                        &#9650;
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="low">
+                                                        <span class="count">
+                                                            2
+                                                        </span>
+                                                        &#9660;
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Reply -
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Share -
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="media hidden-xs">
+                                            <div class="media-left">
+                                                <a href="#">
+                                                    <img alt="64x64" class="media-object" src="img/user5.png">
+                                                </a>
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">
+                                                    Mary Barra
+                                                    <span class="date">
+                                                        2 days ago
+                                                    </span>
+                                                </h4>
+                                                <p>
+                                                    Because I am filling the grid with images of different sizes, is there
+                                                    any way to center the images along a row axis so to speak, rather than
+                                                    each row sharing a top margin/padding/whatever?
+                                                </p>
+                                                <div class="comments-footer clearfix">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="high">
+                                                                <span class="count">
+                                                                    11
+                                                                </span>
+                                                                &#9650;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="low">
+                                                                <span class="count">
+                                                                    0
+                                                                </span>
+                                                                &#9660;
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Reply -
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Share -
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="clearfix comments-form">
+                        <div class="form-group">
+                            <label class="control-label">
+                                <b>
+                                    Write comment
+                                </b>
+                            </label>
+                            <textarea class="form-control" id="textarea" rows="3" placeholder="Character count 280">
+                            </textarea>
+                        </div>
+                        <div class="form-group clearfix">
+                            <div id="charCount" class="pull-left">
+                            </div>
+                            <button class="btn btn-success pull-right">
+                                Post Comment
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <footer class="footer">
+                    Copyright Nexton Admin App
+                    <span>
+                        2017
+                    </span>
+                    .
+                </footer>
+            </div>
+            <div class="right-sidebar">
+                <div class="panel panel-blue">
+                    <div class="panel-heading">
+                        <h5>
+                            Sales
+                        </h5>
+                    </div>
+                    <div class="panel-body">
+                        <div id="cal-heatmap" class="auto-margin">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="action blue-bg">
+                    <h3 class="text-white no-margin">
+                        235
+                    </h3>
+                    <h5 class="text-white no-margin">
+                        Subscribers
+                    </h5>
+                </a>
+                <a href="#" class="action yellow-bg">
+                    <h3 class="text-white no-margin">
+                        762
+                    </h3>
+                    <h5 class="text-white no-margin">
+                        ETotal Clients
+                    </h5>
+                </a>
+                <a href="#" class="action green-bg">
+                    <h3 class="text-white no-margin">
+                        519
+                    </h3>
+                    <h5 class="text-white no-margin">
+                        Emails sent
+                    </h5>
+                </a>
+                <a href="#" class="action red-bg">
+                    <h3 class="text-white no-margin">
+                        351
+                    </h3>
+                    <h5 class="text-white no-margin">
+                        Emails read
+                    </h5>
+                </a>
+                <div class="panel panel-green-one">
+                    <div class="panel-heading">
+                        <h5>
+                            Comments
+                        </h5>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="articles">
+                            <li>
+                                <a href="#">
+                                    <span class="label-bullet">
+                                        &nbsp;
+                                    </span>
+                                    Henrique
+                                    <span class="date">
+                                        12th Jan @1:45am / 8 Comments
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="label-bullet">
+                                        &nbsp;
+                                    </span>
+                                    Skateboard Wills
+                                    <span class="date">
+                                        11th Jan @11:19am / 15 Comments
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="no-border">
+                                    <span class="label-bullet">
+                                        &nbsp;
+                                    </span>
+                                    Commentsus
+                                    <span class="date">
+                                        10th Jan @8:12am / 13 Comments
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js">
+        </script>
+        <script src="js/bootstrap.min.js">
+        </script>
+        <script src="js/sparkline/retina.js">
+        </script>
+        <script src="js/scrollup.min.js">
+        </script>
+        <script src="js/d3.min.js">
+        </script>
+        <script src="js/heatmap/cal-heatmap.min.js">
+        </script>
+        <script src="js/heatmap/cal-heatmap.custom.js">
+        </script>
+        <script src="js/common.js">
+        </script>
+        <script>
+            $(function() {
+                var text_max = 280;
+                $('#charCount').html(text_max + ' characters remaining');
+
+                $('#textarea').keyup(function() {
+                    var text_length = $('#textarea').val().length;
+                    var text_remaining = text_max - text_length;
+                    $('#charCount').html(text_remaining + ' characters remaining');
+                });
+            });
+        </script>
+    </body>
+
+</html>

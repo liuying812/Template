@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mycontrol</title>
+	<link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css"  media="all">
+	<link rel="stylesheet" href="css/common.css" media="all">
+	<link rel="stylesheet" href="css/case.css" media="all">
+	<link href="http://cdn.bootcss.com/font-awesome/3.2.0/css/font-awesome.min.css" rel="stylesheet" media="all"> 
+	
+</head>
+<body style="overflow-x: hidden;">
+
+	<!-- Start navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top" id="nav" style="display: block;padding:0px;">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" style="border-color: rgb(255, 255, 255);">
+	        <span class="sr-only">Toggle navigation DivCon</span>
+	        <span class="icon-bar" style="background-color: rgb(255, 255, 255);"></span>
+	        <span class="icon-bar" style="background-color: rgb(255, 255, 255);"></span>
+	        <span class="icon-bar" style="background-color: rgb(255, 255, 255);"></span>
+	      </button>
+	        
+	      <a class="navbar-brand smoothScroll" href="#home"><span class="BI-brand">My</span><span class="control-brand">control</span></a>
+
+	    </div>
+	    <div id="navbar" class="navbar-collapse collapse">
+	      <ul class="nav navbar-nav navbar-right" style="background-color: transparent;">
+	        <li><a href="index.html" class="smoothScroll">首页</a></li>
+	        <li><a href="http://bicontrol.gempoll.com/echarts/index.html" class="smoothScroll">控件库</a></li>
+   	        <li><a href="#service" class="smoothScroll">产品</a></li>              
+   	        <li class='active'><a href="#portfolio" class="smoothScroll">案例</a></li>
+   	        <li><a href="#contact" class="smoothScroll">关于</a></li>
+   	        <li><a href="#en" class="smoothScroll">EN</a></li>
+	      </ul>
+	    </div>
+	    <!--/.nav-collapse -->
+	  </div>
+	</nav>
+	<!-- end navbar --> 
+
+
+	<section class="case-section" id="case">
+		<div class="container">
+			<div class="row" style="margin-top: 100px;margin-bottom: 150px;">
+				<div class="col-md-8"><img src="img/demo1.jpg"  class="img-responsive"></div>
+
+				<div class="col-md-4">
+					<div class="col-md-12">
+						<h1 style="margin-bottom: 5px;margin-top: 10px;">Data visualization</h1>
+						<div style="color:#A2A2A2;margin-bottom: 30px;">轻型广告仪表板模板</div>
+
+						<div style="margin-bottom: 30px;">打破传统网站模式，让所有企业能够在短时间内拥有一套高端网站，让WEB成为一种潮流！</div>
+
+						<div class="btn-more"> <a href="index.html?iframe=http://keenthemes.com/preview/metronic/theme/admin_1/dashboard_2.html" class="btn active case-detail-btn" role="button">查看详情 →</a></div> 
+
+						<div class="dash-line"></div>
+
+						<div class="case-type">扁平</div>
+
+						<div class="col-md-6 col-sm-3 col-xs-3">
+							<img src="img/case-1.png" class="img-responsive">
+							<div>阿哈本建筑摄影</div>
+							<div class="img-sub-title">建筑摄影</div>
+						</div>
+
+						<div class="col-md-6 col-sm-3 col-xs-3">
+							<img src="img/case-2.png" class="img-responsive">
+							<div>室内建筑</div>
+							<div class="img-sub-title">产品是艺术的体现</div>
+						</div>
+ 
+						<div class="col-md-6 col-sm-3 col-xs-3">
+							<img src="img/case-3.png" class="img-responsive">
+							<div>阿哈本建筑摄影</div>
+							<div class="img-sub-title">建筑摄影</div>
+						</div>
+
+						<div class="col-md-6 col-sm-3 col-xs-3">
+							<img src="img/case-4.png" class="img-responsive">
+							<div>室内建筑</div>
+							<div class="img-sub-title">产品是艺术的体现</div>
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+	</section> 
+
+
+	<!-- Start Footer -->  
+	<footer>
+	    <div class="container">
+	        <div class="row">
+	            <div>
+	                <h1><span class="red-font">My</span>control</h1>
+	                <div class="footer-line"></div> 
+	                <p>地点：上海市徐汇区徐家汇 &nbsp; &nbsp;  邮编：0000000 &nbsp; &nbsp;  电话：400-0000-000000&nbsp; &nbsp;   传真：021-00000000 &nbsp; &nbsp;  邮箱：0000000@fox.com</p>
+	            </div>
+	        </div>
+	    </div>
+
+	  </footer>  
+	  <div class="footer-bottom row" >
+	     <div class="col-md-12 col-xs-12">Copying© 2014 </div> 
+	  </div> 
+     <a href="#case" class="btn btn-lg icon-top smoothScroll" id="top-button" style="display: none;width:47px;height: 47px;">
+        <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+     </a>
+	<!-- End Footer -->
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="bootstrap3/js/bootstrap.min.js"></script>
+	<script src="js/smoothscroll.js"></script>
+
+	<script>
+
+			$(function(){
+
+				$(".navbar-nav li").click(function() {  
+				      $(this).addClass("active").siblings().removeClass("active"); 
+				      var scrollTop = $(window).scrollTop();
+		              if(scrollTop > 300){
+		             	  $(".navbar-nav li:not('.active') a").css("color", "#000");
+		             	} else{
+		             		 $(".navbar-nav li:not('.active') a").css("color", "#fff");
+		             	}
+				    
+		              $(".navbar-nav li.active> a").css("color", "#FF2D2E");	
+				 }); 
+
+				$(window).scroll(function() {
+					console.log("refresh");
+					var scrollTop = $(window).scrollTop();
+		             if(scrollTop > 300){
+							$("#top-button").show();
+
+							$("nav[id='nav']").addClass("padding-nav");
+		                    $("nav[id='nav']").addClass("navscroll");
+
+		                    $(".navbar-brand span:last").attr("class","control-brand1");
+	 
+		                    $(".navbar-toggle").css("border-color","#000");
+		                    $(".icon-bar").css("background-color","#000");
+
+		                   	$(".navbar-nav li:not('.active') a").css("color", "#000");
+		                   	$(".navbar-nav li.active> a").css("color", "#FF2D2E");	  /**/
+		                    
+		                    $(".navbar-default").css("background-color", "#fff");
+
+		             }else{
+							$("#top-button").hide();
+
+							$("nav[id='nav']").removeClass("padding-nav");
+							$("nav[id='nav']").removeClass("navscroll");
+
+							$(".navbar-brand span:last").attr("class","control-brand");
+
+							$(".navbar-toggle").css("border-color","#fff");
+							$(".icon-bar").css("background-color","#fff");
+
+
+							$(".navbar-nav a").css("color", "#fff");
+							$(".navbar-nav li.active> a").css("color", "#FF2D2E");  
+							                                               
+							$(".navbar-default").css("background-color", "#16191E");
+		             }
+
+				});
+				
+	        });
+
+	</script>
+	
+</body>
+</html>
