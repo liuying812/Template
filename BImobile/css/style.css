@@ -1,0 +1,151 @@
+body {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+}
+.panel-heading{
+	   font-weight: 500 !important;
+	   padding-left: 0px;
+}
+.green{
+	color: #63B427;
+}
+.red{
+	color: #FF0B0A;
+}
+.spilt-line{
+	width: 100%;
+	/* height:6px; */
+	border-top: 1px solid #ECECEC;
+	display: inline-block;
+}
+.mask{       
+    position: absolute; 
+    top: 60px; 
+    left: 0px;  
+    filter: alpha(opacity=60); 
+    background-color: #777;     
+    z-index: 100;   
+    opacity:0.5; 
+    -moz-opacity:0.5;     
+ }  
+ .left_menu{
+ 	position: absolute; 
+ 	width: 70%;
+ 	left: -70%;
+ 	top: 60px;
+ 	height: 100%;
+ 	z-index: 200;
+ 	background-color: #fff;
+ }
+ .first-menu{
+ 	height: 50px;
+ 	line-height: 50px;
+ 	font-size: 20px;
+ 	padding-left: 15px;
+ 	/* background-color: #354EA2; */
+ 	color: #333;
+ 	letter-spacing: 1px;
+ }
+ .left_menu .active-menu {
+ 	background-color: #354EA2; 
+ 	color: #fff;
+ }
+ .left_menu ul a li {
+ 	height: 50px;
+ 	line-height: 50px;
+ 	font-size: 20px;
+ 	padding-left: 30px;
+ 	color: #9A9A9A;
+ 	letter-spacing: 1px;
+ }
+/*  .left_menu .nav-1 {
+	margin-right:8px;
+	margin-bottom:-3px; 
+	display:inline-block;
+	width:18px;
+	height:15px;
+	background:url(../img/icon01.png)
+} */
+ .left_menu a:hover,.left_menu a:focus{
+ 	text-decoration: none;
+ 	/* color: #354ea2; */
+ }
+/*  .left_menu li:hover i{
+	 background-position:0 -15px;
+} */
+.panel-heading {
+	border-color: #E6E6E6;
+}
+
+.input-small {
+	width: 145px !important;
+}
+
+.form-control {
+   display: inline-block;
+}
+#filter select{
+	background-color: #E9EBF0;
+}
+@font-face{
+	font-family: 'Hiragino Sans GB W3';
+	font-family: "Calibri Bold";
+	src: url("../fonts/Hiragino Sans GB W3.ttf");
+	src:url("../fonts/calibri bold.ttf");
+}
+.panel-title{
+	min-height:25px;
+	color:#38519F;
+	font-size: 20px;
+	font-family: 'Hiragino Sans GB W3'
+}
+.state .number {
+	margin-top: 5px;
+	font-size: 48px;
+	color: #354ea2;
+	text-align: center;
+	font-family: 'Calibri Bold';
+}
+.state .info {
+    margin-bottom: 0;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Calibri Bold';
+}
+.state .title {
+	color:#97A2B2;
+}
+
+.progress-bar.blue-sharp {
+	background-color: #8592bd;
+}
+
+.progress.vertical {
+	float: none;
+	margin: 0 auto;
+	width: 30px;
+}
+.progress-sm {
+	height: 16px;
+	margin-bottom: 0;
+}
+
+.progress .progress-bar {
+	text-align: right;
+	line-height: 16px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.progress .progress-bar>span {
+	position: relative;
+	right: 5px;
+	top: 0px;
+}
+
+.no-top-border tr th{
+	border-top: none  !important;
+}
+.no-top-border th{
+	text-align: center;
+}
