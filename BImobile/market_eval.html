@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap-progressbar-3.0.3.min.css">
+	<link rel="stylesheet" href="css/bootstrap-reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+	   .progress{
+		    background:#fff;
+	   }
+	</style>
+</head>
+<body class="boxed-page" style="background-color: #EFF3F8;overflow-x:hidden;">
+
+	<div id="top_header" style="background-color: #fff;margin-bottom: 20px;">
+		<!-- <div id="filter"> -->
+			<div class="header" style="padding-top: 15px;">
+				<div class="row container">
+					<div class="col-xs-12" style="text-align: center;">
+					    <a href="javascript:;" id="nav_menu"><i class="fa fa-bars fa-2x" style="color: #CED6DB;float: left;" ></i></a>
+						<span class="header_title">人气快报</span>
+					</div>
+				</div>
+				<div class="spilt-line"></div>	
+				<ul class="dash_ul row">
+					<a href="javascript:;"><li class="col-xs-4 active">乘用车市场</li></a>
+					<a href="javascript:;"><li class="col-xs-4">主要国别</li></a>
+					<a href="javascript:;"><li class="col-xs-4">主要细分</li></a>
+				</ul>
+			</div>
+		<!-- </div>  -->
+	</div>
+
+	<div id="mask" class="mask"></div>
+		<div class="left_menu">
+			<a href="javascript:;"><div class="first-menu active-menu">市场评估和销售预警</div></a>
+			<ul>
+				<a href="index.html"><li><span class="part-center"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;看板</li></a>
+				<a href="market_eval.html"><li><span class="part-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;市场评估</li></a>
+				<a href="forecast.html"><li><span class="part-center"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;销售预测</li></a>
+			</ul>
+
+			<a href="javascript:;"><div class="first-menu">车型网络健康度</div></a>
+			<ul>
+				<a href="dashboard.html"><li><span class="part-center"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;看板</li></a>
+				<a href="javascript:;"><li><span class="part-center"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;竞品格局</li></a>
+				<a href="javascript:;"><li><span class="part-center"><i class="fa fa-filter" aria-hidden="true"></i>&nbsp;销售漏斗分析</li></a>
+			</ul>
+		</div>
+	
+	<div class="row center">
+		<div class="col-xs-12">
+			<div class="panel panel-borderd panel-light-gray">
+				<div class="container"><div class="panel-heading"><span class="panel-title">乘用车总体市场人气走势</span></div></div>
+					<div class="panel-body no-padding" style="min-height: 160px;text-align: center;">
+						<div class="col-xs-4 no-padding-right">
+							<div class="state state2 no-border border-right">
+							  <h3 class="red">-7.0%</h3>
+							  <div class="ratio">环比上周</div>
+								
+							</div> 
+						</div>
+
+						<div class="col-xs-4 no-padding-right">
+							<div class="state state2 no-border border-right">
+							  <h3 class="red">-2.0%</h3>
+							  <div class="ratio">环比上月</div>
+							</div> 
+						</div>
+
+						<div class="col-xs-4 no-padding-right">
+							<div class="state state2 no-border">
+							  <h3 class="green">+21.0%</h3>
+							  <div class="ratio">环比去年</div>
+							</div> 
+						</div>
+
+						<div style="margin-top: 100px;">
+							<span style="position:absolute;top:168px;left:35px;color: #38519F;font-size: 16px;">月度</span>
+						    <div id="chart0" style="width:100%;height: 300px;"></div>
+						</div>
+
+
+				<!-- 	<div style="margin-top: 0px;">
+					<span style="position:absolute;top:465px;left:35px;color: #38519F;font-size: 16px;">月度</span>
+				    <div id="chart1" style="width:100%;height: 300px;"></div>
+				</div>  -->
+
+					<div style="margin-top: 0px;">
+						<span style="position:absolute;top:465px;left:35px;color: #38519F;font-size: 16px;">周度</span>
+					    <div id="chartWk0" style="width:100%;height: 300px;"></div>
+					</div>
+
+						
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row center">
+		<div class="col-xs-12">
+			<div class="panel panel-borderd panel-light-gray" style="margin-bottom: 0px">
+				<div class="container"><div class="panel-heading"><span class="panel-title">主流合资品牌人气走势</span></div></div>
+					<div class="panel-body no-padding" style="min-height: 160px;text-align: center;">
+						<div class="col-xs-4 no-padding-right">
+							<div class="state state2 no-border border-right">
+							  <h3 class="red">-7.0%</h3>
+							  <div class="ratio">环比上周</div>
+								
+							</div> 
+						</div>
+
+						<div class="col-xs-4 no-padding-right">
+							<div class="state state2 no-border border-right">
+							  <h3 class="red">-2.0%</h3>
+							  <div class="ratio">环比上月</div>
+							</div> 
+						</div>
+
+						<div class="col-xs-4 no-padding-right"> 
+							<div class="state state2 no-border">
+							  <h3 class="green">+21.0%</h3>
+							  <div class="ratio">环比去年</div>
+							</div> 
+						</div>
+
+					
+					<div style="margin-top: 100px;">
+							<span style="position:absolute;top:168px;left:35px;color: #38519F;font-size: 16px;">月度</span>
+						    <div id="chart1" style="width:100%;height: 300px;"></div>
+						</div>
+
+				
+					<div style="margin-top: 0px;">
+						<span style="position:absolute;top:465px;left:35px;color: #38519F;font-size: 16px;">周度</span>
+					    <div id="chartWk1" style="width:100%;height: 300px;"></div>
+					</div> 
+
+						
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/components-bootstrap-select.min.js"></script>
+	<script src="js/bootstrap-progressbar.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/echart.js"></script> 
+
+
+	<script>
+		$(function() {
+			$('.progress .progress-bar').progressbar();
+
+			functionMap.chart0(data['中高级车']);
+			functionMap.chartWk0(data['周度']);
+			functionMap.chart1(data['中高级车']);
+			functionMap.chartWk1(data['周度']);
+
+			$("#filter").sticky({
+				topSpacing : 0,
+				zIndex : 999
+			});
+		});
+	</script>
+
+		<script  type="text/javascript">
+			var myChart0 = echarts.init(document.getElementById('chart0'));
+			var myChartWk0 = echarts.init(document.getElementById('chartWk0'));
+			var myChart1 = echarts.init(document.getElementById('chart1'));
+			var myChartWk1 = echarts.init(document.getElementById('chartWk1'));
+
+		
+			var functionMap = {};
+			functionMap.chart0 = function(data) {
+
+			var option0 = {
+				color : [ '#7193c8', '#74cebe'],
+				tooltip : {
+					show : true
+				},
+				grid : {
+					x : 3,
+					y : 40,
+					x2 : 3,
+					y2 : 60
+
+				},
+				legend : {
+					x : 235,
+					data : [ "2016", "2017 F" ]
+				},
+				xAxis : [ {
+					show : true,
+					axisTick: {show: false, lineStyle: {color: '#DDDDDD'}},
+					axisLine: {show: true, lineStyle: {color: '#DDDDDD'}},
+					type : "category",
+					data : [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
+							"Aug", "Sep", "Oct", "Nov", "Dec" ],
+					 axisLabel:{  
+		                interval:0,  
+		                rotate:45,   //倾斜度 -90 至 90 默认为0  
+		                margin:8,  
+		                textStyle:{  
+		                    fontWeight:"500",  
+		                    color:"#94A2A9"  
+		                }  
+	                },    
+				} ],
+				yAxis : [ {
+					show : false,
+					splitLine : {
+						show : false
+					},
+					type : "value",
+				} ],
+				series : [{
+					name : '2016',
+					type : 'line',
+					symbolSize : 6,
+					symbol : 'circle',
+					itemStyle : {
+						normal : {
+							label : {
+								show : true,
+								formatter : '{c}',
+								position : 'bottom',
+								textStyle : {
+									color : '#000',
+									baseline : 'middle'
+								}
+							}
+						}
+					},
+					lineStyle : {
+						normal : {
+							width : 2
+						}
+					},
+					data : data['2016']
+				},
+				{
+					name : '2017 F',
+					type : 'line',
+					symbolSize : 6,
+					symbol : 'circle',
+					itemStyle : {
+						normal : {
+							label : {
+								show : true,
+								formatter : '{c}',
+								position : 'top',
+								textStyle : {
+									color : '#000',
+									baseline : 'middle'
+								}
+							}
+						}
+					},
+					lineStyle : {
+						normal : {
+							width : 2
+						}
+					},
+					data : data['2017F(0+12)']
+				}]
+			};		
+			myChart0.setOption(option0);	
+			}	
+
+
+
+			functionMap.chart1 = function(data) {
+
+			var option1 = {
+				color : [ '#7193c8', '#74cebe'],
+				tooltip : {
+					show : true
+				},
+				grid : {
+					x : 3,
+					y : 40,
+					x2 : 3,
+					y2 : 60
+
+				},
+				legend : {
+					x : 235,
+					data : [ "2016", "2017 F" ]
+				},
+				xAxis : [ {
+					show : true,
+					axisTick: {show: false, lineStyle: {color: '#DDDDDD'}},
+					axisLine: {show: true, lineStyle: {color: '#DDDDDD'}},
+					type : "category",
+					data : [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
+							"Aug", "Sep", "Oct", "Nov", "Dec" ],
+					 axisLabel:{  
+		                interval:0,  
+		                rotate:45,   //倾斜度 -90 至 90 默认为0  
+		                margin:8,  
+		                textStyle:{  
+		                    fontWeight:"500",  
+		                    color:"#94A2A9"  
+		                }  
+	                },    
+				} ],
+				yAxis : [ {
+					show : false,
+					splitLine : {
+						show : false
+					},
+					type : "value",
+				} ],
+				series : [{
+					name : '2016',
+					type : 'line',
+					symbolSize : 6,
+					symbol : 'circle',
+					itemStyle : {
+						normal : {
+							label : {
+								show : true,
+								formatter : '{c}',
+								position : 'bottom',
+								textStyle : {
+									color : '#000',
+									baseline : 'middle'
+								}
+							}
+						}
+					},
+					lineStyle : {
+						normal : {
+							width : 2
+						}
+					},
+					data : data['2016']
+				},
+				{
+					name : '2017 F',
+					type : 'line',
+					symbolSize : 6,
+					symbol : 'circle',
+					itemStyle : {
+						normal : {
+							label : {
+								show : true,
+								formatter : '{c}',
+								position : 'top',
+								textStyle : {
+									color : '#000',
+									baseline : 'middle'
+								}
+							}
+						}
+					},
+					lineStyle : {
+						normal : {
+							width : 2
+						}
+					},
+					data : data['2017F(0+12)']
+				}]
+			};		
+			myChart1.setOption(option1);	
+			}	
+
+
+
+			functionMap.chartWk0 = function(data) {
+
+			var optionWk0 = {
+				color : [ '#7193c8', '#74cebe'],
+				tooltip : {
+					show : true
+				},
+				grid : {
+					x : 3,
+					y : 40,
+					x2 : 3,
+					y2 : 60
+
+				},
+				legend : {
+					x : 235,
+					data : [ "2016", "2017 F" ]
+				},
+				xAxis : [ {
+					show : true,
+					axisTick: {show: false, lineStyle: {color: '#DDDDDD'}},
+					axisLine: {show: true, lineStyle: {color: '#DDDDDD'}},
+					type : "category",
+					data : ["Feb W1", "Feb W2", "Feb W3","Feb W4","Mar W1"],
+					 axisLabel:{  
+		                interval:0,  
+		             /*   rotate:45,  */ //倾斜度 -90 至 90 默认为0  
+		                margin:8,  
+		                textStyle:{  
+		                    fontWeight:"500",  
+		                    color:"#94A2A9"  
+		                }  
+	                },    
+				} ],
+				yAxis : [ {
+					show : false,
+					splitLine : {
+						show : false
+					},
+					type : "value",
+				} ],
+				series : [{
+					name : '2016',
+					type : 'line',
+					symbolSize : 6,
+					symbol : 'circle',
+					itemStyle : {
+						normal : {
+							label : {
+								show : true,
+								formatter : '{c}',
+								position : 'bottom',
+								textStyle : {
+									color : '#000',
+									baseline : 'middle'
+								}
+							}
+						}
+					},
+					lineStyle : {
+						normal : {
+							width : 2
+						}
+					},
+					data : data['2016']
+				},
+				{
+					name : '2017 F',
+					type : 'line',
+					symbolSize : 6,
+					symbol : 'circle',
+					itemStyle : {
+						normal : {
+							label : {
+								show : true,
+								formatter : '{c}',
+								position : 'top',
+								textStyle : {
+									color : '#000',
+									baseline : 'middle'
+								}
+							}
+						}
+					},
+					lineStyle : {
+						normal : {
+							width : 2
+						}
+					},
+					data : data['2017F(0+12)']
+				}]
+			};		
+			myChartWk0.setOption(optionWk0);	
+			}	
+
+
+
+			functionMap.chartWk1 = function(data) {
+
+			var optionWk1 = {
+				color : [ '#7193c8', '#74cebe'],
+				tooltip : {
+					show : true
+				},
+				grid : {
+					x : 3,
+					y : 40,
+					x2 : 3,
+					y2 : 60
+
+				},
+				legend : {
+					x : 235,
+					data : [ "2016", "2017 F" ]
+				},
+				xAxis : [ {
+					show : true,
+					axisTick: {show: false, lineStyle: {color: '#DDDDDD'}},
+					axisLine: {show: true, lineStyle: {color: '#DDDDDD'}},
+					type : "category",
+					data : ["Feb W1", "Feb W2", "Feb W3","Feb W4","Mar W1"],
+					 axisLabel:{  
+		                interval:0,  
+		             /*   rotate:45,  */ //倾斜度 -90 至 90 默认为0  
+		                margin:8,  
+		                textStyle:{  
+		                    fontWeight:"500",  
+		                    color:"#94A2A9"  
+		                }  
+	                },    
+				} ],
+				yAxis : [ {
+					show : false,
+					splitLine : {
+						show : false
+					},
+					type : "value",
+				} ],
+				series : [{
+					name : '2016',
+					type : 'line',
+					symbolSize : 6,
+					symbol : 'circle',
+					itemStyle : {
+						normal : {
+							label : {
+								show : true,
+								formatter : '{c}',
+								position : 'bottom',
+								textStyle : {
+									color : '#000',
+									baseline : 'middle'
+								}
+							}
+						}
+					},
+					lineStyle : {
+						normal : {
+							width : 2
+						}
+					},
+					data : data['2016']
+				},
+				{
+					name : '2017 F',
+					type : 'line',
+					symbolSize : 6,
+					symbol : 'circle',
+					itemStyle : {
+						normal : {
+							label : {
+								show : true,
+								formatter : '{c}',
+								position : 'top',
+								textStyle : {
+									color : '#000',
+									baseline : 'middle'
+								}
+							}
+						}
+					},
+					lineStyle : {
+						normal : {
+							width : 2
+						}
+					},
+					data : data['2017F(0+12)']
+				}]
+			};		
+			myChartWk1.setOption(optionWk1);	
+			}	
+
+		</script> 
+
+		<script>
+			var data = {
+				'中高级车' : {
+					'2016' : [ 21.5, 6.9, 10.3, 9.6, 10.3, 9.5, 9.7, 10.7, 12.4,
+							11.7, 13.9, 18.3 ],
+					'2017F(0+12)' : [ 14.4, 12.5, 13.4, 10.6, 11.3,'-', '-', '-', '-',
+										'-', '-', '-']
+				},
+				'周度' : {
+					'2016' : [ 21.5, 6.9, 10.3, 9.6, 10.3],
+					'2017F(0+12)' : [ 14.4, 12.5, 13.4, 10.6, 11.3]
+				}
+			}
+		</script>
+
+</body>
+
+</html>

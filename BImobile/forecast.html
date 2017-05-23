@@ -29,62 +29,66 @@
 		.fixed-table-container thead th .th-inner{
 			padding: 3px !important;
 		}
+
 	</style>
 
 </head>
 <body class="boxed-page" style="background-color: #EFF3F8;overflow-x:hidden;">
 
 	<div style="background-color: #fff;margin-bottom: 20px;">
-		<div class="header" style="padding-top: 15px;">
-			<div class="row container">
-				<div class="col-xs-12" style="text-align: center;">
-				    <a href="javascript:;" id="nav_menu"><i class="fa fa-bars fa-2x" style="color: #CED6DB;float: left;" ></i></a>
-					<span style="font-size: 23px;">销量预警</span>
+		<div id="filter">
+			<div class="header" style="padding-top: 15px;">
+				<div class="row container">
+					<div class="col-xs-12" style="text-align: center;">
+					    <a href="javascript:;" id="nav_menu"><i class="fa fa-bars fa-2x" style="color: #CED6DB;float: left;" ></i></a>
+						<span class="header_title">销量预警</span>
+					</div>
 				</div>
+				<div class="spilt-line"></div>	
 			</div>
-			<div class="spilt-line"></div>	
-		</div>
 
-		<div id="mask" class="mask"></div>
-		<div class="left_menu">
-			<a href="javascript:;"><div class="first-menu active-menu">市场评估和销售预警</div></a>
-			<ul>
-				<a href="index.html"><li><span class="part-center"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;看板</li></a>
-				<a href="javascript:;"><li><span class="part-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;市场评估</li></a>
-				<a href="javascript:;"><li><span class="part-center"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;销售预测</li></a>
-			</ul>
-
-			<a href="javascript:;"><div class="first-menu">车型网络健康度</div></a>
-			<ul>
-				<a href="javascript:;"><li><span class="part-center"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;看板</li></a>
-				<a href="javascript:;"><li><span class="part-center"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;竞品格局</li></a>
-				<a href="javascript:;"><li><span class="part-center"><i class="fa fa-filter" aria-hidden="true"></i>&nbsp;销售漏斗分析</li></a>
-			</ul>
-		</div>
-
-		<div id="top_header">
-			<div id="filter">
-				<div class="container" style="padding-left:40px; padding-bottom: 10px;border-bottom:1px solid #E6E6E6">
-					 	<select name="model"
-							class="bs-select form-control input-small btn-circle"
-							data-style="btn-circle btn-sm　btn-white">
-							<option title="<b>类别：</b>中高级车" value="中高级车">中高级车</option>
-							<option title="<b>类别：</b>中小型车" value="中小型车">中小型车</option>
-							<option title="<b>类别：</b>紧凑型SUV" value="紧凑型SUV">紧凑型SUV</option>
-							<option title="<b>类别：</b>小型SUV" value="小型SUV">小型SUV</option>
-						</select>
+			<div id="top_header">
+				<div class="container" style="padding-left:40px; border-bottom:1px solid #E6E6E6;">
+				 	<select name="model"
+						class="bs-select form-control input-small btn-circle"
+						data-style="btn-circle btn-sm　btn-white">
+						<option title="<b>类别：</b>中高级车" value="中高级车">中高级车</option>
+						<option title="<b>类别：</b>中小型车" value="中小型车">中小型车</option>
+						<option title="<b>类别：</b>紧凑型SUV" value="紧凑型SUV">紧凑型SUV</option>
+						<option title="<b>类别：</b>小型SUV" value="小型SUV">小型SUV</option>
+					</select>
 				</div>
 			</div>
 		</div> 
 	</div>
 
+	<div id="mask" class="mask"></div>
+	<div class="left_menu">
+		<a href="javascript:;"><div class="first-menu active-menu">市场评估和销售预警</div></a>
+		<ul>
+			<a href="index.html"><li><span class="part-center"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;看板</li></a>
+			<a href="javascript:;"><li><span class="part-center"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&nbsp;市场评估</li></a>
+			<a href="forecast.html"><li><span class="part-center"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;销售预测</li></a>
+		</ul>
+
+		<a href="javascript:;"><div class="first-menu">车型网络健康度</div></a>
+		<ul>
+			<a href="dashboard.html"><li><span class="part-center"><i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;看板</li></a>
+			<a href="javascript:;"><li><span class="part-center"><i class="fa fa-trophy" aria-hidden="true"></i>&nbsp;竞品格局</li></a>
+			<a href="javascript:;"><li><span class="part-center"><i class="fa fa-filter" aria-hidden="true"></i>&nbsp;销售漏斗分析</li></a>
+		</ul>
+	</div>
+
+
+
+
 	<div class="row center">
 		<div class="col-xs-12" >
 			<div class="panel panel-borderd panel-light-gray" style="margin-bottom: 0px;">
-				<div class="container"><div class="panel-heading"><span  class="panel-title">中高级车2017年零售量预警</span></div></div>
-					<div class="panel-body no-padding" style="min-height: 160px;text-align: center;">
-					   	<span style="color: #95A1B1;">单位: 万辆</span>
-						<div id="chart0" style="height: 300px;"></div>
+				<div class="container"><div class="panel-heading"><span  class="panel-title"></span></div></div>
+					<div class="panel-body no-padding" style="min-height: 160px;">
+					   	<span style="position:absolute;top:70px;left:35px;color: #95A1B1;">单位: 万辆</span>
+						<div id="chart0" style="width:100%;height: 300px;"></div>
 						
 						<table id="saletable" style="border-bottom-width: 0px;"></table>
 					</div>
@@ -97,6 +101,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/components-bootstrap-select.min.js"></script>
 	<script src="js/echart.js"></script> 
 	<script src="http://cdn.bootcss.com/bootstrap-table/1.11.1/bootstrap-table.min.js"></script>
 	<script src="js/main.js"></script>
@@ -110,6 +115,8 @@
 			$("#saletable").bootstrapTable({
 				 data : data1['中高级车'] 
 			});
+
+			$('.panel-title').text('中高级车2017年零售量预警');
 		});
 	</script>
 	
@@ -125,18 +132,24 @@
 				show : true
 			},
 			grid : {
-				x : 30,
-				y : 30,
-				x2 : 40,
-				y2 : 50
+				x : 3,
+				y : 40,
+				x2 : 3,
+				y2 : 60
+
+				/*x : 10,
+				y : 40,
+				x2 : 10,
+				y2 : 50*/
 			},
 			legend : {
-				x : 200,
+				x : 235,
 				data : [ "2016", "2017 F" ]
 			},
 			xAxis : [ {
 				show : true,
 				axisTick: {show: false, lineStyle: {color: '#DDDDDD'}},
+				axisLine: {show: true, lineStyle: {color: '#DDDDDD'}},
 				type : "category",
 				data : [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
 						"Aug", "Sep", "Oct", "Nov", "Dec" ],
@@ -145,7 +158,7 @@
 	                rotate:45,   //倾斜度 -90 至 90 默认为0  
 	                margin:8,  
 	                textStyle:{  
-	                    fontWeight:"600",  
+	                    fontWeight:"500",  
 	                    color:"#94A2A9"  
 	                }  
                 },    
@@ -206,22 +219,22 @@
 					}
 				},
 				data : data['2017F(0+12)']
-			},
-			{
-				name : '2017 VP',
-				type : 'line',
-				symbolSize : 8,
-				lineStyle : {
-					normal : {
-						width : 3
-					}
-				},
-				data : [ '-', '-', '-', '-', '-', '-', '-', '-',
-						'-', '-', '-', '-' ]
 			} ]
 		};		
 		myChart0.setOption(option0);	
-		}		
+		}	
+
+		$('select[name=model]').change(function(){
+				var val = $(this).val();
+			
+				$('.panel-title').text(val+'2017年零售量预警');
+				
+				functionMap.chart0(data[val]);
+				$("#saletable").bootstrapTable('load',{
+					data: data1[val]
+			    });
+			
+			});	
 	</script> 
 
 	<script>
