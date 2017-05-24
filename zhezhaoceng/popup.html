@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>  
+	    .popup {display:none;position:fixed;width:100%;height:100%;left:0;top:0;z-index:300;background:rgba(0,0,0,0.6);filter:Alpha(opcity=60);overflow: auto;}  
+	    .abc{width: 100%;height: 100px;background-color: wheat}  
+	    .popup_hide{background-color: white;width: 100%;height: 100px;}  
+	</style> 
+</head>
+<body>
+	<div class="abc">  
+	    点我出现遮罩层哦  
+	</div>  
+	<div class="popup">  
+	    <div class="popup_hide">  
+	        asdfghjbvcsa  
+	    </div>  
+	</div> 
+
+
+	<script src="https://cdn.bootcss.com/jquery/2.1.3/jquery.js"></script>
+	<script>  
+	    $('.abc').on("click",function(){  
+	        $('.popup').show();  
+	    });  
+	    $(".popup").on("click",function(){  
+	        $(this).hide();  
+	    });  
+	    $(".popup .popup_hide").on("click",function(e){  
+	        e.stopPropagation();  
+	    })  
+	</script> 
+	
+</body>
+</html>
